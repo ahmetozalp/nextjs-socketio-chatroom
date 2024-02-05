@@ -20,8 +20,8 @@ interface SocketContext {
     rooms: Record<string, { name: string }>;
     messages?: Message[];
     setMessages: React.Dispatch<React.SetStateAction<Message[]>>;
-    timer?: number | null; // Change this line
-    setTimer: React.Dispatch<React.SetStateAction<number | null>>; // Change this line
+    timer?: number | null; 
+    setTimer: React.Dispatch<React.SetStateAction<number | null>>; 
 }
 
 interface Props {
@@ -104,7 +104,6 @@ export const SocketProvider = ({children}: Props) => {
     );
 };
 
-// Remove this line
 export default SocketProvider;
 
 export const useSocket = () => {
