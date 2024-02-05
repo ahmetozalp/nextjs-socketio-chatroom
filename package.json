@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "lerna": "^6.6.2"
+  },
+  "scripts": {
+    "dev": "lerna run dev --parallel"
+  },
+  "name": "chat-app-task",
+  "workspaces": [
+    "packages/*"
+  ]
+}
